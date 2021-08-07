@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.mainPackage.fragment.DiscoverFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/base_FFFFFF"
+        android:text="发现"
+        android:textColor="@color/base_666"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/base_whiteF7" />
+    <View style="@style/base_line_1px_marginLeft_12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_FFFFFF"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_friend_circle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/circle_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_circle"
+                android:text="朋友圈"
+                android:textColor="@color/base_666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/right_arrow_foreground" />
+
+        </RelativeLayout>
+
+        <View style="@style/base_line_1px_marginLeft_12dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add_friend_foreground"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_add"
+                android:text="添加好友"
+                android:textColor="@color/base_666"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/base_line_1px_marginLeft_12dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_scan_qrCode"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="20dp">
+
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/scan_foreground"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="扫一扫"
+                android:layout_toRightOf="@id/iv_scan"
+                android:textColor="@color/base_666"
+                android:textSize="15sp" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

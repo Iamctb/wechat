@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_chat"
+    >
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.wechat.ui.mainPackage.fragment.chatFragment"
+        android:label="ChatFragment" />
+
+    <fragment
+        android:id="@+id/navigation_mail_list"
+        android:name="com.example.wechat.ui.mainPackage.fragment.MailListFragment"
+        android:label="MailListFragment" />
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.example.wechat.ui.mainPackage.fragment.DiscoverFragment"
+        android:label="DiscoverFragment" />
+
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.example.wechat.ui.mainPackage.fragment.MyFragment"
+        android:label="MyFragment" />
+
+</navigation>

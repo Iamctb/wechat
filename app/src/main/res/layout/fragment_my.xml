@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_whiteF7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="33dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="太兵"
+                android:textColor="@color/base_222222"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13112345678@qq.com"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/base_whiteF7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/cart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="33dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称"
+                android:textColor="@color/base_666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/person_icon_arrow_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/base_line_1px_marginLeft_12dp" />
+
+        <RelativeLayout
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="33dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="二维码"
+                android:textColor="@color/base_666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/qrcode"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"/>
+
+
+
+        </RelativeLayout>
+
+        <View style="@style/base_line_1px_marginLeft_12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/base_whiteF7" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/base_666"
+            android:textSize="15sp" />
+
+
+
+
+        <View style="@style/base_line_1px_marginLeft_12dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.mainPackage.activity.FriendActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/base_FFFFFF"
+        android:text="搜索"
+        android:textColor="@color/base_666"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/base_whiteF7" />
+    <View style="@style/base_line_1px_marginLeft_12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/base_FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cancel_foreground"/>
+
+        <EditText
+            android:id="@+id/et_friend_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_search"
+            android:layout_toRightOf="@id/iv_cancel"
+            android:text="test"
+            android:textColor="@color/base_666"
+            android:maxLines="1"
+            android:background="@null"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_foreground" />
+
+    </RelativeLayout>
+
+    <View style="@style/base_line_1px_marginLeft_12dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_friend"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/base_FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_fiend_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/fiend_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_fiend_photo"
+            android:text="冰冰"
+            android:textStyle="bold"
+            android:textColor="@color/base_666"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_friend"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_friend_foreground" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
