@@ -11,5 +11,7 @@ ucrop: 头像裁剪
 网络消息发送
 头像裁剪
 
-
+## 说明
+这个是前端代码，要想运行，可配合后端代码使用：
+https://github.com/Iamctb/im_first
 
