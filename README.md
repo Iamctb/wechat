@@ -3,7 +3,7 @@
 
 ##
 技术栈
-Retrofit: 网络请求
-MMKV：本地化存储
+Okhttp: 网络请求
+MMKV+hawk：本地化存储
 
 
